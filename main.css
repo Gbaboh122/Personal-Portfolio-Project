@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e6e4ce;
+  font-family: "Source Sans Pro", sans-serif;
+}
+nav {
+  background-color: #9f84bd;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 30px;
+}
+nav a:hover {
+  border-bottom: 3px solid #fff;
+}
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #000;
+}
+header {
+  background-image: url("./images/coding\ image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+#head {
+  color: yellow;
+  font-family: monospace;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.info {
+  font-family: cursive;
+  font-size: 1.7rem;
+  color: #ebc3db;
+  font-weight: bold;
+}
+.info-2 {
+  font-family: "Gamja Flower", cursive;
+  font-size: 1.5rem;
+  color: #e6e4ce;
+}
+.center-section {
+  text-align: center;
+  padding: 20px;
+}
+.center-section-2 {
+  text-align: center;
+  background-color: #ebc3db;
+  padding: 20px;
+  color: #fff;
+}
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /*max-width: 270px;*/
+  margin: 20px auto;
+}
+.project-title {
+  margin: 10px;
+  max-width: 250px;
+  transition: transform 0.3s ease;
+}
+.project-title:hover {
+  transform: scale(1.05);
+}
+.project-title img {
+  max-width: 100%;
+}
+.project-title p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.project-title a {
+  text-decoration: none;
+}
+.project-title a:hover {
+  text-decoration: underline;
+}
+footer {
+  background-color: #9f84bd;
+  padding: 10px;
+  text-align: center;
+}
+footer p {
+  display: inline;
+  padding-left: 5px;
+}
+footer .fa-heart {
+  color: red;
+}
+.social-links {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 5px 0;
+  margin: 0;
+}
+.social-links a {
+  color: #fff;
+  font-size: 30px;
+  margin: 0 10px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+}
+@media screen and (max-weight: 300px) {
+  #welcome-section {
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
